@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="com.vogella.nattable.target">
+	<locations>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/releases/2019-06"/>
+			<unit id="org.eclipse.equinox.executable.feature.group" version="3.8.400.v20190515-0925"/>
+			<unit id="org.eclipse.rcp.sdk.id" version="4.12.0.I20190605-1800"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/nattable/snapshots/latest/repository"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.core.feature.feature.group" version="1.6.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.core.source.feature.feature.group" version="1.6.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.e4.feature.feature.group" version="1.2.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.e4.source.feature.feature.group" version="1.2.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.glazedlists.feature.feature.group" version="1.6.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.glazedlists.source.feature.feature.group" version="1.6.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.nebula.feature.feature.group" version="1.2.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.nebula.source.feature.feature.group" version="1.2.0.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.poi.feature.feature.group" version="1.5.1.201907190420"/>
+			<unit id="org.eclipse.nebula.widgets.nattable.extension.poi.source.feature.feature.group" version="1.5.1.201907190420"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://dl.bintray.com/vogellacompany/codeexamples-javadatamodel/updatesite/1.4.0/"/>
+			<unit id="com.vogella.model.feature.feature.group" version="1.0.0.201805251445"/>
+			<unit id="com.vogella.model.feature.source.feature.group" version="1.0.0.201805251445"/>
+		</location>
+	</locations>
+</target>
