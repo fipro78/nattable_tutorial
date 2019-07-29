@@ -20,9 +20,9 @@ Alternatively follow these steps to prepare the tutorial manually:
 3. Create a target definition similar to the exercise in the [online tutorial](https://www.vogella.com/tutorials/NatTable/article.html#exercise_nattable_install_target_def)
    Use the following update site URLs to get the latest framework versions:
    
-   Eclipse release update site: http://download.eclipse.org/releases/2019-06 (Eclipse RCP SDK, Eclipse Platform Launcher Executables, Note: Remember to disable "Group by Category" to find the specified elements)
-   NatTable Latest SNAPSHOT: https://download.eclipse.org/nattable/snapshots/latest/repository (All)
-   vogella sample data model: https://dl.bintray.com/vogellacompany/codeexamples-javadatamodel/updatesite/1.4.0/ (All)
+   - Eclipse release update site: http://download.eclipse.org/releases/2019-06 (Eclipse RCP SDK, Eclipse Platform Launcher Executables, Note: Remember to disable "Group by Category" to find the specified elements)
+   - NatTable Latest SNAPSHOT: https://download.eclipse.org/nattable/snapshots/latest/repository (All)
+   - vogella sample data model: https://dl.bintray.com/vogellacompany/codeexamples-javadatamodel/updatesite/1.4.0/ (All)
    
 4. Create and prepare an Eclipse 4 RCP application
    This will serve as a skeleton to integrate and verify the exercises.
