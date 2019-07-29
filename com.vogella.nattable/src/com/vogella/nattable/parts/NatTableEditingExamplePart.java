@@ -23,6 +23,8 @@ public class NatTableEditingExamplePart {
 		// create a body layer stack out of
 		// DataLayer, SelectionLayer, ViepwortLayer
 		
+		// register the ColumnLabelAccumulator
+		
 		// create a column header layer stack
 
 		// create a row header layer stack
@@ -39,7 +41,7 @@ public class NatTableEditingExamplePart {
 		//add a custom editing configuration
 		// - enable editing for all cells
 		// - register a combo box cell editor for Gender
-		// - register a checkbox cell editor for the married field
+		// - register a checkbox editor, checkbox painter and a boolean converter for the married column
 		
 		//call configure to populate the IConfigRegistry
 		
