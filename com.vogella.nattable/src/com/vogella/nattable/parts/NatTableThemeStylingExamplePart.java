@@ -7,10 +7,12 @@ import org.eclipse.nebula.widgets.nattable.NatTable;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 
+import com.vogella.model.person.PersonService;
+
 public class NatTableThemeStylingExamplePart {
 	
 	@PostConstruct
-	public void postConstruct(Composite parent) {
+	public void postConstruct(Composite parent, PersonService personService) {
 		// create the layout
 		parent.setLayout(new GridLayout());
 		
