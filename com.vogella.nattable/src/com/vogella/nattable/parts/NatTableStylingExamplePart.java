@@ -16,6 +16,7 @@ import org.eclipse.nebula.widgets.nattable.layer.DataLayer;
 import org.eclipse.nebula.widgets.nattable.layer.LabelStack;
 import org.eclipse.nebula.widgets.nattable.layer.cell.IConfigLabelAccumulator;
 import org.eclipse.nebula.widgets.nattable.painter.cell.CheckBoxPainter;
+import org.eclipse.nebula.widgets.nattable.reorder.ColumnReorderLayer;
 import org.eclipse.nebula.widgets.nattable.selection.SelectionLayer;
 import org.eclipse.nebula.widgets.nattable.style.CellStyleAttributes;
 import org.eclipse.nebula.widgets.nattable.style.DisplayMode;
@@ -59,7 +60,8 @@ public class NatTableStylingExamplePart {
 		// DataLayer, SelectionLayer, ViepwortLayer
 		// remember to set the regionName on the ViewportLayer to GridRegion.BODY
 		DataLayer bodyDataLayer = new DataLayer(bodyDataProvider);
-		SelectionLayer selectionLayer = new SelectionLayer(bodyDataLayer);
+		ColumnReorderLayer columnReorderLayer = new ColumnReorderLayer(bodyDataLayer);
+		SelectionLayer selectionLayer = new SelectionLayer(columnReorderLayer);
 		ViewportLayer viewportLayer = new ViewportLayer(selectionLayer);
 
 		// register the config label accumulator on the DataLayer

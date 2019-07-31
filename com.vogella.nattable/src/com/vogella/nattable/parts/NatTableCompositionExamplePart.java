@@ -17,6 +17,7 @@ import org.eclipse.nebula.widgets.nattable.grid.layer.ColumnHeaderLayer;
 import org.eclipse.nebula.widgets.nattable.layer.CompositeLayer;
 import org.eclipse.nebula.widgets.nattable.layer.DataLayer;
 import org.eclipse.nebula.widgets.nattable.layer.ILayer;
+import org.eclipse.nebula.widgets.nattable.reorder.ColumnReorderLayer;
 import org.eclipse.nebula.widgets.nattable.selection.SelectionLayer;
 import org.eclipse.nebula.widgets.nattable.viewport.ViewportLayer;
 import org.eclipse.swt.layout.GridLayout;
@@ -53,7 +54,8 @@ public class NatTableCompositionExamplePart {
 		// create a body layer stack out of
 		// DataLayer, SelectionLayer, ViepwortLayer
 		DataLayer bodyDataLayer = new DataLayer(bodyDataProvider);
-		SelectionLayer selectionLayer = new SelectionLayer(bodyDataLayer);
+		ColumnReorderLayer columnReorderLayer = new ColumnReorderLayer(bodyDataLayer);
+		SelectionLayer selectionLayer = new SelectionLayer(columnReorderLayer);
 		ViewportLayer viewportLayer = new ViewportLayer(selectionLayer);
 
 		// create a column header layer stack using using the ColumnHeaderLayer

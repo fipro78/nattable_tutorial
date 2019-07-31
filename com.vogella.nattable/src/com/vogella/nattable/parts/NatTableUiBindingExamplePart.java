@@ -30,6 +30,7 @@ import org.eclipse.nebula.widgets.nattable.layer.DataLayer;
 import org.eclipse.nebula.widgets.nattable.layer.ILayer;
 import org.eclipse.nebula.widgets.nattable.layer.LayerUtil;
 import org.eclipse.nebula.widgets.nattable.layer.event.RowObjectDeleteEvent;
+import org.eclipse.nebula.widgets.nattable.reorder.ColumnReorderLayer;
 import org.eclipse.nebula.widgets.nattable.selection.SelectionLayer;
 import org.eclipse.nebula.widgets.nattable.selection.command.SelectRowsCommand;
 import org.eclipse.nebula.widgets.nattable.ui.binding.UiBindingRegistry;
@@ -79,7 +80,8 @@ public class NatTableUiBindingExamplePart {
 		// create a body layer stack out of
 		// DataLayer, SelectionLayer, ViepwortLayer
 		DataLayer bodyDataLayer = new DataLayer(bodyDataProvider);
-		SelectionLayer selectionLayer = new SelectionLayer(bodyDataLayer);
+		ColumnReorderLayer columnReorderLayer = new ColumnReorderLayer(bodyDataLayer);
+		SelectionLayer selectionLayer = new SelectionLayer(columnReorderLayer);
 		ViewportLayer viewportLayer = new ViewportLayer(selectionLayer);
 
 		// register the command handler
